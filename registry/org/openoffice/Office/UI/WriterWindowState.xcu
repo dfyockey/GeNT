@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oor:component-data oor:package="org.openoffice.Office.UI" oor:name="WriterWindowState"
+	xmlns:install="http://openoffice.org/2004/installation" xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<node oor:name="UIElements">
+		<node oor:name="States">
+			<!-- Used to dock the toolbar in the first toolbar row (by default it's floating) -->
+			<node oor:name="private:resource/toolbar/addon_net.diffengine.GeNT.toolbar" oor:op="replace">
+				<prop oor:name="UIName" oor:type="xs:string">
+					<value>GeNT</value>
+				</prop>
+				<prop oor:name="DockPos" oor:type="xs:string">
+					<value>0,0</value>
+				</prop>
+				<prop oor:name="Docked" oor:type="xs:boolean">
+					<value>true</value>
+				</prop>
+				<prop oor:name="DockingArea" oor:type="xs:int">
+					<value>1</value>
+				</prop>
+				
+				<!--
+					Worked out the Style option and its values by considering,
+					in particular,
+						com.sun.star.ui.ConfigurableUIElement service reference,
+						com.sun.star.ui.UIElementSettings service reference,
+						com.sun.star.ui.ItemDescriptor service reference, and
+						com.sun.star.ui.ItemStyle constant group reference,
+					and performing some trial-and-error experiments based on
+					educated guesses! :)
+				-->
+				<prop oor:name="Style" oor:type="xs:int">
+					<!-- 0 = Icon Only, 1 = Text Only, 2 = Icon and Text -->
+					<value>0</value>
+				</prop>
+				
+			</node>
+		</node>
+	</node>
+
+</oor:component-data>
