@@ -1,0 +1,12 @@
+#UNO project configuration file
+#Mon May 01 12:01:28 EDT 2023
+project.prefix=net.diffengine
+project.language=Java
+project.ooo=LibreOffice 7.3
+project.idl=/idl
+regclassname=net.diffengine.comp.RegistrationHandler
+project.implementation=comp
+project.build=build
+project.sdk=7.3.7.2
+project.srcdir=/src
+javaversion=java5

@@ -1,0 +1,12 @@
+#ifndef __net_diffengine_gent_idl__
+#define __net_diffengine_gent_idl__
+
+#include <net/diffengine/XGeNT.idl>
+module net { module diffengine { 	
+
+	service GeNT : net::diffengine::XGeNT {
+
+	};
+
+ }; };
+#endif

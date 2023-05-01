@@ -1,0 +1,11 @@
+#ifndef __net_diffengine_xgent_idl__
+#define __net_diffengine_xgent_idl__
+
+module net { module diffengine { 	
+
+	interface XGeNT {
+
+	};
+
+ }; };
+#endif
